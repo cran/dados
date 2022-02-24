@@ -1,0 +1,50 @@
+df:
+    source: pixarfilms::public_response
+    name: pixar_avalicao_publico
+variables:
+    film:
+        trans: filme
+        desc: "T\u00edtulo do filme"
+        values:
+            Toy Story: "Toy Story - Um Mundo de Aventuras"
+            A Bug's Life: Vida de Inseto
+            Toy Story 2: "Toy Story 2"
+            Monsters, Inc.:  "Monstros S. A."
+            Finding Nemo: Procurando Nemo
+            The Incredibles: "Os Incr\u00edveis"
+            Cars: Carros
+            Ratatouille: Ratatouille
+            WALL-E: WALL-E
+            Up: Up - Altas Aventuras
+            Toy Story 3: "Toy Story 3"
+            Cars 2: "Carros 2"
+            Brave: Valente
+            Monsters University: Universidade Monstros
+            Inside Out: Divertidamente
+            The Good Dinosaur: O Bom Dinossauro
+            Finding Dory: Procurando Dory
+            Cars 3: "Carros 3"
+            Coco: "Viva - A Vida \u00e9 Uma Festa"
+            Incredibles 2: "Os Incr\u00edveis 2"
+            Toy Story 4: "Toy Story 4"
+            Onward: "Dois Irm\u00e3os: Uma Jornada Fant\u00e1stica"
+            Soul: Soul
+    rotten_tomatoes:
+        trans: nota_rotten_tomatoes
+        desc: "Avalia\u00e7\u00e3o obtida pelo site Rotten Tomatoes. As avalia\u00e7\u00f5es s\u00e3o num\u00e9ricas e v\u00e3o de 0 a 100."
+    metacritic:
+        trans: nota_metacritic
+        desc: "Avalia\u00e7\u00e3o obtida pelo site Metacritic. As avalia\u00e7\u00f5es s\u00e3o num\u00e9ricas e v\u00e3o de 0 a 100."
+    cinema_score:
+        trans: nota_cinema_score
+        desc: "Avalia\u00e7\u00e3o obtida pelo site CinemaScore. Avalia\u00e7\u00e3o em escala alfab\u00e9tica que varia de A+ a F."
+    critics_choice:
+        trans: nota_critics_choice
+        desc: "Avalia\u00e7\u00e3o obtida pelo Critics' Choice Movie Awards que varia de 0 a 100."
+help:
+    name: pixar_avalicao_publico
+    alias: pixar_avalicao_publico
+    title: "Filmes da Pixar e avalia\u00e7\u00f5es"
+    description: "Filmes da Pixar com avalia\u00e7\u00f5es do p\u00fablico e da cr\u00edtica, obtidas por diferentes sites"
+    usage: pixar_avalicao_publico
+    format: Um tibble com 23 linhas e 5 colunas

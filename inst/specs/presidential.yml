@@ -1,0 +1,25 @@
+df:
+  source: ggplot2::presidential
+  name: presidentes_eua
+variables:
+  name:
+    trans: nome
+    desc: Nome do presidente
+  start:
+    trans: inicio
+    desc: "Data de in\u00edcio do per\u00edodo presidencial"
+  end:
+    trans: fim
+    desc: "Data do t\u00e9rmino do per\u00edodo presidencial"
+  party:
+    trans: partido
+    desc: "Partido pol\u00edtico ao qual pertence"
+    values:
+      Republican: Republicano
+      Democratic: Democrata
+help:
+  name: presidentes_eua
+  alias: presidentes_eua
+  title: "Per\u00edodo que engloba 11 presidentes, desde Eisenhower at\u00e9 Obama"
+  description: "Nome, data de in\u00edcio e de t\u00e9rmino do mandato e partido pol\u00edtico de 11 presidentes dos Estados Unidos, de Eisenhower a Obama."
+  format: Um data.frame com 11 linhas e 4 colunas

@@ -1,0 +1,26 @@
+df:
+  source: tidyr::table5
+  name: tabela5
+variables:
+  country:
+    trans: pais
+    desc: "Nome do pa\u00eds"
+    values:
+      Afghanistan: "Afeganist\u00e3o"
+      Brazil: Brasil
+      China: China
+  century:
+    trans: seculo
+    desc: "S\u00e9culo correspondente aos valores registrados"
+  year:
+    trans: ano
+    desc: "Ano correspondente aos valores registrados"
+  rate:
+    trans: taxa
+    desc: "Taxa de casos de tuberculose com rela\u00e7\u00e3o a popula\u00e7\u00e3o total"
+help:
+  name: tabela5
+  alias: tabela5
+  title: "Registros de tuberculose da Organiza\u00e7\u00e3o Mundial da Sa\u00fade (quinta variante)"
+  description: "Cont\u00e9m observa\u00e7\u00f5es de casos registrados no Afeganist\u00e3o, Brasil e China nos anos de 1999 e 2000"
+  format: Um tibble com 6 linhas e 4 colunas

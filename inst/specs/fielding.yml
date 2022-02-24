@@ -1,0 +1,64 @@
+df:
+  source: Lahman::Fielding
+  name: jardineiros
+variables:
+  playerID:
+    trans: id_jogador
+    desc: ID do jogador
+  yearID:
+    trans: id_ano
+    desc: Ano
+  stint:
+    trans: ordem_equipe
+    desc: "Ordem em que o jogador se moveu entre as equipes na mesma temporada"
+  teamID:
+    trans: id_equipe
+    desc: ID da equipe (fator)
+  lgID:
+    trans: id_liga
+    desc: "ID da liga (fator com n\u00edveis AA, AL, FL, NL, PL, UA)"
+  POS:
+    trans: posicao
+    desc: "Posi\u00e7\u00e3o do jogador defensivo"
+  G:
+    trans: jogos
+    desc: Jogos
+  GS:
+    trans: jogos_iniciados
+    desc: Jogos iniciados
+  InnOuts:
+    trans: inn_outs
+    desc: Tempo jogado pelo jogador expresso em outs
+  PO:
+    trans: outs_feitos
+    desc: Outs feitas pelo jogador
+  A:
+    trans: assistencias
+    desc: "Assist\u00eancias realizadas pelo jogador"
+  E:
+    trans: erros
+    desc: Erros cometidos pelo jogador
+  DP:
+    trans: eliminacao_dupla
+    desc: "Elimina\u00e7\u00e3o dupla em que o jogador esteve envolvido defensivamente"
+  PB:
+    trans: bolas_passadas
+    desc: "Bolas passadas (aplic\u00e1vel a receptores)"
+  WP:
+    trans: lancamentos_desviados
+    desc: "Wild pitches - arremessos ruins que permitem o avan\u00e7o de corredores advers\u00e1rios (aplic\u00e1vel a arremessadores)"
+  SB:
+    trans: bases_roubadas
+    desc: "Bases roubadas pelo oponente (aplic\u00e1vel aos receptor)"
+  CS:
+    trans: capturado_roubando
+    desc: "Opositores apanhados em tentativa de roubo (aplic\u00e1vel a receptores)"
+  ZR:
+    trans: taxa_zona
+    desc: "Porcentagem de bolas capturadas por um defensor, em sua zona defensiva t\u00edpica"
+help:
+  name: jardineiros
+  alias: jardineiros
+  title: "Tabela de estat\u00edsticas do jardineiro"
+  description: "Estat\u00edsticas de defesa"
+  format: Um data frame com 140.921 linhas e 18 colunas

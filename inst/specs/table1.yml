@@ -1,0 +1,26 @@
+df:
+  source: tidyr::table1
+  name: tabela1
+variables:
+  country:
+    trans: pais
+    desc: "Nome do pa\u00eds"
+    values:
+      Afghanistan: "Afeganist\u00e3o"
+      Brazil: Brasil
+      China: China
+  year:
+    trans: ano
+    desc: "Ano correspondente aos valores registrados"
+  cases:
+    trans: casos
+    desc: "N\u00famero de casos registrados"
+  population:
+    trans: populacao
+    desc: "Popula\u00e7\u00e3o do pa\u00eds"
+help:
+  name: tabela1
+  alias: tabela1
+  title: "Registros de tuberculose da Organiza\u00e7\u00e3o Mundial da Sa\u00fade (primeira variante)"
+  description: "Cont\u00e9m observa\u00e7\u00f5es de casos registrados no Afeganist\u00e3o, Brasil e China nos anos de 1999 e 2000"
+  format: Um tibble com 6 linhas e 4 colunas

@@ -1,0 +1,97 @@
+df:
+  source: Lahman::People
+  name: pessoas
+variables:
+  playerID:
+    trans: id_jogador
+    desc: ID do jogador
+  birthYear:
+    trans: ano_nascimento
+    desc: "Ano de nascimento"
+  birthMonth:
+    trans: mes_nascimento
+    desc: "M\u00eas de nascimento"
+  birthDay:
+    trans: dia_nascimento
+    desc: "Dia de nascimento"
+  birthCountry:
+    trans: pais_nascimento
+    desc: "Pa\u00eds de nascimento"
+  birthState:
+    trans: estado_nascimento
+    desc: Estado de nascimento
+  birthCity:
+    trans: cidade_nascimento
+    desc: Cidade de nascimento
+  deathYear:
+    trans: ano_falecimento
+    desc: "Ano de falecimento"
+  deathMonth:
+    trans: mes_falecimento
+    desc: "M\u00eas de falecimento"
+  deathDay:
+    trans: dia_falecimento
+    desc: "Dia de falecimento"
+  deathCountry:
+    trans: pais_falecimento
+    desc: "Pa\u00eds de falecimento"
+  deathState:
+    trans: estado_falecimento
+    desc: Estado de falecimento
+  deathCity:
+    trans: cidade_falecimento
+    desc: Cidade de falecimento
+  nameFirst:
+    trans: nome
+    desc: Nome
+  nameLast:
+    trans: sobrenome
+    desc: Sobrenome
+  nameGiven:
+    trans: nome_proprio
+    desc: "Nome pr\u00f3prio"
+  weight:
+    trans: peso
+    desc: Peso em libras
+  height:
+    trans: altura
+    desc: Altura em polegadas
+  bats:
+    trans: rebatedor
+    desc: "Se, como rebatedor, voc\u00ea \u00e9 destro (D) ou canhoto (C)"
+    values:
+      R: D
+      L: C
+  throws:
+    trans: arremessador
+    desc: "Se, como arremessador, voc\u00ea \u00e9 destro (D) ou canhoto (C)"
+    values:
+      R: D
+      L: C
+  debut:
+    trans: data_primeiro_jogo
+    desc: "Data do primeiro jogo na primeira divis\u00e3o"
+  finalGame:
+    trans: data_ultimo_jogo
+    desc: "Data do \u00faltimo jogo na primeira divis\u00e3o"
+  retroID:
+    trans: id_retrosheet
+    desc: "C\u00f3digo do jogador usado em Retrosheet (http://www.retrosheet.org/)"
+  bbrefID:
+    trans: id_brw
+    desc: "C\u00f3digo do jogador usado em Baseball Reference website (http://www.baseball-reference.com/)"
+  deathDate:
+    trans: data_falecimento
+    desc: Data de falecimento em formato yyyy-mm-dd
+  birthDate:
+    trans: data_nascimento
+    desc: Data de nascimento em formato yyyy-mm-dd
+help:
+  name: pessoas
+  alias: pessoas
+  title: Tabela de pessoas
+  description: "Nomes de jogadores, data de nascimento e informa\u00e7\u00f5es
+     bibliogr\u00e1ficas. Este arquivo \u00e9 usado para obter detalhes sobre os jogadores listados em rebatedores,
+     arremessadores e outros arquivos nos quais os jogadores s\u00e3o identificados por
+    id_jogador"
+  format: Um data frame com 19.617 linhas e 26 colunas
